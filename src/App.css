@@ -1,0 +1,297 @@
+.navbar {
+    background-color: #1d1d1d;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.header {
+    font-family: "Kanit";
+    font-size: 32px;
+    margin: 5px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.navbar input {
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    width: 200px;
+    margin-right: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #2f333a;
+    color: white;
+}
+
+.trending {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: -10px auto;
+    overflow-x: scroll;
+}
+
+.trending::-webkit-scrollbar {
+    height: 5px;
+}
+
+.trending::-webkit-scrollbar-track {
+    background-color: #2f333a;
+    border-radius: 5px;
+}
+
+.trending::-webkit-scrollbar-thumb {
+    background-color: #ffffff7c;
+    border-radius: 5px;
+}
+
+.trendingEntries {
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.image {
+    width: 160px;
+    height: 240px;
+    border-radius: 5px;
+}
+
+.title {
+    color: white;
+    font-family: "Atkinson Hyperlegible";
+    font-size: 18px;
+    max-height: 70px;
+    width: 150px;
+    overflow-y: auto;
+}
+
+.title::-webkit-scrollbar {
+    width: 2px;
+}
+
+.title::-webkit-scrollbar-track {
+    background-color: #2f333a;
+    border-radius: 5px;
+}
+
+.title::-webkit-scrollbar-thumb {
+    background-color: #ffffff7c;
+    border-radius: 5px;
+}
+
+
+.introTexts {
+    display: flex;
+    align-items: center;
+    margin: 0px auto;
+}
+
+.introTexts p {
+    color: white;
+    font-family: "Kanit";
+    font-size: 26px;
+}
+
+.trendingImg {
+    width: 30px;
+}
+
+.animeInfo {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    border-radius: 5px;
+    overflow: auto;
+    background-color: #383838;
+}
+
+.movieInfoContainer {
+    margin: 10px auto;
+    width: 95%;
+}
+
+.infoCover {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
+.infoTitle {
+    color: white;
+    font-family: "Kanit";
+    font-size: 36px
+}
+
+.infoImage {
+    width: 140px;
+    border-radius: 10px;
+}
+
+.infoDesc {
+    color: white;
+    font-family: "Atkinson Hyperlegible";
+    width: 100%;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.infoEpisodes {
+    color: #CDFADB;
+    font-family: "Atkinson Hyperlegible";
+    font-size: 20px;
+    padding: 10px
+}
+
+.episodesContainer {
+    width: 90%;
+    margin: -30px auto;
+    text-align: center;
+    overflow-x: auto;
+    display: flex;
+    flex-direction: row;
+    cursor: grab;
+    scroll-behavior: smooth;
+
+}
+
+.episodesContainer:active {
+    cursor: grabbing;
+}
+
+
+.episodesContainer::-webkit-scrollbar {
+    height: 5px;
+}
+
+.episodesContainer::-webkit-scrollbar-track {
+    background-color: #2f333a;
+    border-radius: 5px;
+}
+
+.episodesContainer::-webkit-scrollbar-thumb {
+    background-color: #ffffff7c;
+    border-radius: 5px;
+}
+
+.episodesImage {
+    width: 200px;
+    max-height: 150px;
+    border-radius: 20px;
+}
+
+.episodesButtons {
+    width: 80px;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4b4b4bab;
+    color: #D2E0FB;
+    font-family: "Atkinson Hyperlegible";
+    font-size: 18px;
+}
+
+.popup {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    background-color: #3838388e;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.popupContainer::-webkit-scrollbar {
+    width: 5px;
+}
+
+.popupContainer::-webkit-scrollbar-track {
+    background-color: #2f333a;
+    border-radius: 5px;
+}
+
+.popupContainer::-webkit-scrollbar-thumb {
+    background-color: #ffffff7c;
+    border-radius: 5px;
+}
+
+
+.animeEntries {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-style: groove;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.animeEntries p {
+    color: white;
+    font-family: "Atkinson Hyperlegible";
+    font-size: 22px;
+    margin-left: 10px;
+}
+
+.animeEntries img {
+    width: 120px;
+    border-radius: 10px;
+}
+
+.tempPop {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    background-color: #3838388e;
+    align-items: center;
+    justify-content: center;
+}
+
+.episodesEntries:hover {
+    transition: filter 0.5s ease-in-out;
+    filter: blur(1.5px);
+}
+
+.episodesEntries:not(:hover) {
+    transition: filter 0.5s ease-in-out;
+    filter: blur(0px);
+}
+
+.videoContainer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    height: 100vh;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    background-color: #383838d7;
+}
+
+.video_player {
+    width: 80%;
+    border-radius: 10px;
+    border: none;
+}
